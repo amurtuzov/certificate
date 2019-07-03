@@ -1,0 +1,143 @@
+.payment-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	.preview-gratters {
+		resize: none;
+		box-sizing: border-box;
+		border: none;
+		margin-top: 30px;
+  		border-bottom: 1px solid #b6b6b6;
+  		outline: none;
+  		width: 100%;
+  		padding: 5px;
+  		font-size: 16px;
+  		font-family: "Roboto Regular", sans-serif;
+  		&:focus {
+  			border-bottom: 1px solid #fe255a;
+  		}
+
+		&::-webkit-input-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-moz-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-moz-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-ms-input-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+	}
+	.preview-gratters__count {
+		text-align: right;
+		font-size: 14px;
+		margin-bottom: 0;
+		color: #cfcfcf;
+		margin-top: 10px;
+	}
+	.quantity-toggler {
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 0 20px;
+		align-items: center;
+		width: 130px;
+		height: 60px;
+		font-size: 30px;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		border-radius: 3px;
+		border: 1px solid #d7d7d7;
+		background-color: #ffffff;
+		button {
+			color: #a0a0a0;
+		}
+	}
+	.make-payment {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 60px;
+		margin-top: 30px;
+		border-radius: 3px;
+		color: #ffffff;
+		background-color: #000000;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		&:hover {
+			background-color: #fe255a;
+		}
+	}
+	.payment-systems {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 100px 40px 80px;
+	}
+}
+@media (min-width: 768px) {
+	.payment-wrapper {
+		width: 50%;
+		padding-left: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		.quantity-toggler {
+			margin-right: 30px;
+		}
+		.make-payment {
+			margin-top: 0;
+			flex-grow: 1;
+			width: auto;
+		}
+		.gratters__wrapper {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.preview-gratters {
+			margin-top: 0;
+		}
+		.payment-systems {
+			justify-content: flex-start;
+    		margin-top: 40px;
+    		padding: 0;
+    		width: 100%;
+    		img {
+    			&:first-child {
+    				margin-right: 20px;
+    			}
+    		}
+		}
+	}
+}
+@media (min-width: 1280px) {
+	.payment-wrapper {
+		padding-left: 0;
+		width: 100%;
+		.preview-gratters {
+			margin-top: 30px;
+		}
+		.quantity-toggler {
+			width: 200px;
+		}
+	}
+}

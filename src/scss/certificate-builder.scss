@@ -1,0 +1,20 @@
+.builder-wrapper {
+	box-sizing: border-box;
+	padding: 0 20px;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (min-width: 768px) {
+	.builder-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+}
+@media (min-width: 1280px) {
+	.builder-wrapper {
+		padding: 0 75px;
+		padding-right: 80px;
+		width: 55%;
+	}
+}

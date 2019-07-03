@@ -1,0 +1,148 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+  .application--wrap {
+    min-height: auto !important;
+    font-family: 'Bebas Neue', sans-serif;
+    .v-picker {
+      box-shadow: none;
+      margin-top: 0 !important;
+    .primary {
+      background-color: #fe255a !important;
+      border-color: #fe255a !important;
+    }
+    .accent {
+      background-color: #fe255a !important;
+      border-color: #fe255a !important;
+    }
+    .v-date-picker-table .v-btn {
+      font-size: 14px;
+    }
+  }
+}
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 280px;
+  margin: 0px auto;
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fe255a;
+    div {
+      background-color: #fe255a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 40px;
+      justify-content: center;
+        span {
+          &.title {
+            font-size: 16px !important;
+            font-weight: normal;
+            margin-bottom: 20px;
+          }
+          &.subtitle {
+            font-weight: bold;
+            font-size: 22px;
+          }
+      }
+    }
+}
+
+.modal-body {
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.available-times {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  button {
+    font-size: 14px;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 32px;
+    border-radius: 50%;
+    height: 32px;
+    outline: none;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: #fe255a;
+      color: #ffffff;
+    }
+  }
+  button.active {
+    background-color: #fe255a;
+    color: #ffffff;
+  }
+}
+.modal-footer {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: flex-end;
+  padding: 0 15px 20px;
+  box-sizing: border-box;
+  height: 40px;
+  .modal-cancel,
+  .modal-prev-step {
+    color: #cfcfcf;
+  }
+  button {
+    transform: scale(0.99);
+    outline: none;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+}

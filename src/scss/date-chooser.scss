@@ -1,0 +1,40 @@
+.date-chooser {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	.date__chooser-title {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	button {
+		width: 100%;
+		height: 60px;
+		margin-bottom: 20px;
+		font-size: 20px;
+		cursor: pointer;
+		padding: 0;
+		background-color: #f8f8f8;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		border: none;
+		&:hover {
+			box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.11);
+			background-color: #ffffff;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.date-chooser {
+		width: 50%;
+		border-left: 1px solid #000000;
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.date-chooser {
+		width: 100%;
+		border-top: 1px solid #000000;
+	}
+}

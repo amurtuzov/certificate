@@ -1,0 +1,78 @@
+.design__chooser {
+	font-family: 'Bebas Neue', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    .design__chooser-title {
+    	font-size: 30px;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }
+	.design__chooser-variants {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #000000;
+		.design__variant {
+			margin-bottom: 20px;
+			position: relative;
+			img {
+				width: 100%;
+				height: auto;
+				cursor: pointer;
+				display: block;
+			}
+		}
+		.design__variant {
+			transition: all;
+			&:after {
+				content: '';
+				visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: opacity 1.2s ease;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+				background-image: url('../../assets/checked.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 40px 40px;
+			}
+		}
+		.design__variant.added {
+			&:after {
+				visibility: visible;
+				opacity: 1;
+				transition: opacity 1.2s ease;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.design__chooser {
+		.design__chooser-title {
+			text-align: left;
+		}
+		.design__chooser-variants {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			.design__variant {
+				margin-bottom: 30px;
+				width: 25%;
+			}
+		}
+	}
+}
+@media (min-width: 1280px) {
+	.design__chooser {
+		border-bottom: 1px solid #000000;
+		.design__chooser-variants {
+			border-bottom: none;
+			.design__variant {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

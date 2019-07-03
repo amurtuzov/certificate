@@ -1,0 +1,134 @@
+.tab-wrapper {
+	border-bottom: 1px solid #000000;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.tab-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	.back-btn {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		font-size: 20px;
+		font-weight: bold;
+		position: relative;
+		width: 20px;
+		height: 30px;
+		outline: none;
+		cursor: pointer;
+		&:before {
+			position: relative;
+    		content: "";
+    		display: inline-block;
+			width: 13px;
+			height: 13px;
+			border-right: 4px solid black;
+			border-top: 4px solid black;
+    		transform: rotate(-135deg);
+		}
+	}
+	.tab-title {
+		&:first-child {
+			margin-left: 0;
+		}
+		font-size: 30px;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	.tab-switcher {
+		font-size: 30px;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		margin-left: 10px;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		color: #dbdbdb;
+		text-decoration: underline;
+	}
+}
+.tab-switchers {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	button {
+		width: 45%;
+		height: 60px;
+		font-size: 20px;
+		cursor: pointer;
+		padding: 0;
+		background-color: #f8f8f8;
+		font-family: 'Bebas Neue', sans-serif;
+		font-weight: bold;
+		border: none;
+		&:hover {
+			box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.11);
+			background-color: #ffffff;
+		}
+	}
+}
+.tab-info {
+	input {
+		box-sizing: border-box;
+		border: none;
+  		border-bottom: 1px solid #b6b6b6;
+  		outline: none;
+  		width: 100%;
+  		padding: 20px 15px;
+  		font-size: 16px;
+  		font-family: "Roboto Regular", sans-serif;
+  		&:focus {
+  			border-bottom: 1px solid #fe255a;
+  		}
+
+		&::-webkit-input-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-moz-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-moz-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+
+  		&::-ms-input-placeholder {
+    		font-family: 'Roboto Light', sans-serif;
+    		font-size: 14px;
+    		color: #cfcfcf;
+    		opacity: 1;
+  		}
+	}
+}
+@media (min-width: 768px) {
+	.tab-wrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: none;
+		width: 50%;
+		border-left: 1px solid #000000;
+	}
+}
+
+@media (min-width: 1280px) {
+	.tab-wrapper {
+		width: 100%;
+		padding-right: 0;
+	}
+}
